@@ -7,7 +7,10 @@
       "device": "merge",
       "defconfig": "merge_hi6250_defconfig"
     },
-    "withKernelSU": true,
+    "withKernelSU": false,
+    "disable_inet": true,
+    "withLXC_Patch": true,
+    "withDocker_LXC": true,
     "toolchains": [
   {
     "repo": "https://gitlab.com/ThankYouMario/android_prebuilts_clang-standalone/",
