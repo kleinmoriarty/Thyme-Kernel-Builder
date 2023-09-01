@@ -8,9 +8,9 @@
             "defconfig": "merge_hi6250_defconfig"
         },
         "withKernelSU": false,
-        "disable_inet": true,
-        "withLXC_Patch": true,
-        "withDocker_LXC": true,
+        "disableinet": true,
+        "withLXCPatch": true,
+        "withDockerLXC": true,
         },
         "toolchains": [
             {
