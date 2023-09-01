@@ -9,16 +9,17 @@
     },
     "withKernelSU": true,
     "toolchains": [
-      {
-       "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/+archive/refs/tags/android-12.1.0_r27.tar.gz",
-       "name": "gcc",
-       "binPath": ["bin"]
-      }
+  {
+    "repo": "https://github.com/djb77/aarch64-linux-android-4.9",
+    "branch": "master",
+    "name": "gcc",
+    "binPath": ["bin"]
+  }
     ],
     "ccache": true,
     "params": {
       "ARCH": "arm64",
-      "CC": "gcc/bin/clang",
+      "CC": "gcc/bin/aarch64-linux-android-gcc",
       "externalCommand": {
         "CROSS_COMPILE": "gcc/bin/aarch64-linux-gnu-",
         "CROSS_COMPILE_ARM32": "gcc/bin/arm-linux-gnueabi-",
@@ -52,16 +53,17 @@
     },
     "withKernelSU": false,
     "toolchains": [
-      {
-       "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/+archive/refs/tags/android-12.1.0_r27.tar.gz",
-       "name": "gcc",
-       "binPath": ["bin"]
-      }
+  {
+    "repo": "https://github.com/djb77/aarch64-linux-android-4.9",
+    "branch": "master",
+    "name": "gcc",
+    "binPath": ["bin"]
+  }
     ],
     "ccache": true,
     "params": {
       "ARCH": "arm64",
-      "CC": "gcc/bin/clang",
+      "CC": "gcc/bin/aarch64-linux-android-gcc",
       "externalCommand": {
         "CROSS_COMPILE": "gcc/bin/aarch64-linux-gnu-",
         "CROSS_COMPILE_ARM32": "gcc/bin/arm-linux-gnueabi-",
