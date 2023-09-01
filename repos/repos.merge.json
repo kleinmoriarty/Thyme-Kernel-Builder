@@ -7,7 +7,7 @@
             "device": "merge",
             "defconfig": "merge_hi6250_defconfig"
         },
-        "withKernelSU": false,
+        "withKernelSU": true,
         "disableinet": true,
         "withLXCPatch": true,
         "withDockerLXC": true,
