@@ -18,21 +18,21 @@
     "ccache": true,
     "params": {
       "ARCH": "arm64",
-      "CC": "proton-clang/bin/clang",
+      "CC": "gcc/bin/clang",
       "externalCommand": {
-        "CROSS_COMPILE": "proton-clang/bin/aarch64-linux-gnu-",
-        "CROSS_COMPILE_ARM32": "proton-clang/bin/arm-linux-gnueabi-",
-        "LD": "proton-clang/bin/ld.lld",
-        "AR": "proton-clang/bin/llvm-ar",
-        "NM": "proton-clang/bin/llvm-nm",
-        "OBJCOPY": "proton-clang/bin/llvm-objcopy",
-        "OBJDUMP": "proton-clang/bin/llvm-objdump",
-        "READELF": "proton-clang/bin/llvm-readelf",
-        "OBJSIZE": "proton-clang/bin/llvm-size",
-        "STRIP": "proton-clang/bin/llvm-strip",
-        "LDGOLD": "proton-clang/bin/aarch64-linux-gnu-ld.gold",
-        "LLVM_AR": "proton-clang/bin/llvm-ar",
-        "LLVM_DIS": "proton-clang/bin/llvm-dis"
+        "CROSS_COMPILE": "gcc/bin/aarch64-linux-gnu-",
+        "CROSS_COMPILE_ARM32": "gcc/bin/arm-linux-gnueabi-",
+        "LD": "gcc/bin/ld.lld",
+        "AR": "gcc/bin/llvm-ar",
+        "NM": "gcc/bin/llvm-nm",
+        "OBJCOPY": "gcc/bin/llvm-objcopy",
+        "OBJDUMP": "gcc/bin/llvm-objdump",
+        "READELF": "gcc/bin/llvm-readelf",
+        "OBJSIZE": "gcc/bin/llvm-size",
+        "STRIP": "gcc/bin/llvm-strip",
+        "LDGOLD": "gcc/bin/aarch64-linux-gnu-ld.gold",
+        "LLVM_AR": "gcc/bin/llvm-ar",
+        "LLVM_DIS": "gcc/bin/llvm-dis"
       }
     },
     "AnyKernel3": {
@@ -61,21 +61,21 @@
     "ccache": true,
     "params": {
       "ARCH": "arm64",
-      "CC": "proton-clang/bin/clang",
+      "CC": "gcc/bin/clang",
       "externalCommand": {
-        "CROSS_COMPILE": "proton-clang/bin/aarch64-linux-gnu-",
-        "CROSS_COMPILE_ARM32": "proton-clang/bin/arm-linux-gnueabi-",
-        "LD": "proton-clang/bin/ld.lld",
-        "AR": "proton-clang/bin/llvm-ar",
-        "NM": "proton-clang/bin/llvm-nm",
-        "OBJCOPY": "proton-clang/bin/llvm-objcopy",
-        "OBJDUMP": "proton-clang/bin/llvm-objdump",
-        "READELF": "proton-clang/bin/llvm-readelf",
-        "OBJSIZE": "proton-clang/bin/llvm-size",
-        "STRIP": "proton-clang/bin/llvm-strip",
-        "LDGOLD": "proton-clang/bin/aarch64-linux-gnu-ld.gold",
-        "LLVM_AR": "proton-clang/bin/llvm-ar",
-        "LLVM_DIS": "proton-clang/bin/llvm-dis"
+        "CROSS_COMPILE": "gcc/bin/aarch64-linux-gnu-",
+        "CROSS_COMPILE_ARM32": "gcc/bin/arm-linux-gnueabi-",
+        "LD": "gcc/bin/ld.lld",
+        "AR": "gcc/bin/llvm-ar",
+        "NM": "gcc/bin/llvm-nm",
+        "OBJCOPY": "gcc/bin/llvm-objcopy",
+        "OBJDUMP": "gcc/bin/llvm-objdump",
+        "READELF": "gcc/bin/llvm-readelf",
+        "OBJSIZE": "gcc/bin/llvm-size",
+        "STRIP": "gcc/bin/llvm-strip",
+        "LDGOLD": "gcc/bin/aarch64-linux-gnu-ld.gold",
+        "LLVM_AR": "gcc/bin/llvm-ar",
+        "LLVM_DIS": "gcc/bin/llvm-dis"
       }
     },
     "AnyKernel3": {
