@@ -7,11 +7,10 @@
             "device": "merge",
             "defconfig": "merge_hi6250_defconfig"
         },
-        "PatchOption": {
-            "withKernelSU": false,
-            "disable_inet": true,
-            "withLXC_Patch": true,
-            "withDocker_LXC": true
+        "withKernelSU": false,
+        "disable_inet": true,
+        "withLXC_Patch": true,
+        "withDocker_LXC": true,
         },
         "toolchains": [
             {
