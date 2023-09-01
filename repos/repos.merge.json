@@ -67,14 +67,20 @@
     "toolchains": [
   {
     "repo": "https://gitlab.com/ThankYouMario/android_prebuilts_clang-standalone/",
-    "branch": "17",
+    "branch": "16",
     "name": "clang",
     "binPath": ["bin"]
   },
   {
-    "repo": "https://gitlab.com/ThankYouMario/android_prebuilts_clang-standalone/",
-    "branch": "16",
-    "name": "clang",
+    "repo": "https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9/",
+    "branch": "lineage-17.1",
+    "name": "gcc-64",
+    "binPath": ["bin"]
+  },
+  {
+    "repo": "https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9/",
+    "branch": "lineage-17.1",
+    "name": "gcc-32",
     "binPath": ["bin"]
   }
     ],
@@ -83,8 +89,8 @@
       "ARCH": "arm64",
       "CC": "clang/bin/clang",
       "externalCommand": {
-        "CROSS_COMPILE": "clang/bin/aarch64-linux-gnu-",
-        "CROSS_COMPILE_ARM32": "clang/bin/arm-linux-gnueabi-",
+        "CROSS_COMPILE": "gcc-64/bin/aarch64-linux-gnu-",
+        "CROSS_COMPILE_ARM32": "gcc-32/bin/arm-linux-gnueabi-",
         "LD": "clang/bin/ld.lld",
         "AR": "clang/bin/llvm-ar",
         "NM": "clang/bin/llvm-nm",
