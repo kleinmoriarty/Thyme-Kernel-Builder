@@ -11,7 +11,6 @@
         "disableinet": true,
         "withLXCPatch": true,
         "withDockerLXC": true,
-        },
         "toolchains": [
             {
                 "repo": "https://gitlab.com/ThankYouMario/android_prebuilts_clang-standalone/",
