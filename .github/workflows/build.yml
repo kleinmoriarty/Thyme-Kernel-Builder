@@ -207,7 +207,7 @@ jobs:
           chmod 777 LXC-DOCKER-OPEN-CONFIG.sh
           
           ./LXC-DOCKER-OPEN-CONFIG.sh arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }} -w
-          wget https://github.com/DreamConnected/lxc-docker/releases/download/untagged-224a410900bb16a661ca/lxc.patch
+          wget https://github.com/DreamConnected/lxc-docker/releases/download/1.0/lxc.patch
           patch -p0 < lxc.patch
 
           sed -i '/CONFIG_ANDROID_PARANOID_NETWORK/d' arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }}
