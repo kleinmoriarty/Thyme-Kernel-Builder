@@ -203,6 +203,9 @@ jobs:
           echo -e "CONFIG_HAVE_KPROBES=y" >> arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }}
           echo -e "CONFIG_KPROBE_EVENTS=y" >> arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }}
 
+          git config --global user.email "DreamConnected@github.com"
+          git config --global user.name "DreamConnected"
+
           git fetch https://github.com/cyberknight777/android_kernel_docker main
           git merge -s ours --no-commit --allow-unrelated-histories --squash FETCH_HEAD
           git read-tree --prefix=docker -u FETCH_HEAD
