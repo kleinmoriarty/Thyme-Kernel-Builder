@@ -205,6 +205,36 @@ jobs:
 
           cat arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }}
 
+      - name: "😋 Setup Docker & LXC"
+        working-directory: ${{ env.KERNEL_NAME }}
+        env:
+          arch: ${{ steps.generate-args.outputs.ARCH }}
+        if: ${{ env.withDocker_LXC == 'true' }}
+        run: |
+          wget https://github.com/wu17481748/lxc-docker/releases/download/lxc-docker-2config/LXC-DOCKER-OPEN-CONFIG.sh
+          chmod 777 LXC-DOCKER-OPEN-CONFIG.sh
+          ./LXC-DOCKER-OPEN-CONFIG.sh arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }} -w
+
+          cat arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }}
+
+      - name: "😋 Patch LXC"
+        working-directory: ${{ env.KERNEL_NAME }}
+        env:
+          arch: ${{ steps.generate-args.outputs.ARCH }}
+        if: ${{ env.withLXC_Patch == 'true' }}
+        run: |
+          wget https://github.com/wu17481748/lxc-docker/releases/download/lxc/lxc.patch
+          patch -p0 < lxc.patch
+       
+      - name: "Setup Disable ANDROID_PARANOID_NETWORK"
+        working-directory: ${{ env.KERNEL_NAME }}
+        env:
+          arch: ${{ steps.generate-args.outputs.ARCH }}
+        if: ${{ env.disable_inet == 'true' }}
+        run: |
+          sed -i '/CONFIG_ANDROID_PARANOID_NETWORK/d' arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }}
+          echo "# CONFIG_ANDROID_PARANOID_NETWORK is not set" >> arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }}
+        
       - name: "👍 Make defconfig"
         working-directory: ${{ env.KERNEL_NAME }}
         env:
