@@ -9,7 +9,7 @@ on:
 jobs:
   Set-repos:
     name: "🐂 Parse repos.json"
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     outputs:
       repos: ${{ steps.generate-matrix.outputs.repos }}
       builddate: ${{ steps.generate-builddate.outputs.builddate }}
@@ -213,8 +213,6 @@ jobs:
           echo "# CONFIG_ANDROID_PARANOID_NETWORK is not set" >> arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }}
 
           cat arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }}
-
-          find ./ -exec dos2unix {} \;
         
       - name: "👍 Make defconfig"
         working-directory: ${{ env.KERNEL_NAME }}
