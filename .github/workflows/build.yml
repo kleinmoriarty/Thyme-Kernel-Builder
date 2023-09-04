@@ -195,11 +195,19 @@ jobs:
           git config --global user.email "DreamConnected@github.com"
           git config --global user.name "DreamConnected"
 
-          git fetch https://github.com/cyberknight777/android_kernel_docker main
-          git merge -s ours --no-commit --allow-unrelated-histories --squash FETCH_HEAD
-          git read-tree --prefix=docker -u FETCH_HEAD
-          echo "source \"docker/Kconfig\"" >> arch/${{ env.arch }}/Kconfig
-          git commit -m "Imported docker/ from https://github.com/cyberknight777/android_kernel_docker"
+          wget https://github.com/wu17481748/lxc-docker/releases/download/lxc-docker-2config/LXC-DOCKER-OPEN-CONFIG.sh
+          chmod 777 ./LXC-DOCKER-OPEN-CONFIG.sh
+          ./LXC-DOCKER-OPEN-CONFIG.sh arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }} -w
+
+          wget https://github.com/fate-think/LXC-DOCKER-KernelSU_Action/releases/download/1.0.0/runcpatch.sh
+          chmod a+x runcpatch.sh
+          if [ -f kernel/cgroup.c ]; then
+          ./runcpatch.sh kernel/cgroup.c               
+          fi
+          
+          if [ -f kernel/cgroup/cgroup.c ]; then
+          ./runcpatch.sh kernel/cgroup/cgroup.c               
+          fi
 
           sed -i '/CONFIG_ANDROID_PARANOID_NETWORK/d' arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }}
           echo "# CONFIG_ANDROID_PARANOID_NETWORK is not set" >> arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }}
