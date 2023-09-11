@@ -40,21 +40,21 @@
         "ccache": true,
         "params": {
             "ARCH": "arm64",
-            "CC": "gcc-64/bin/aarch64-linux-android-gcc",
+            "CC": "gcc-64/bin/aarch64-linux-gnu-gcc",
             "externalCommand": {
-                "CROSS_COMPILE": "gcc-64/bin/aarch64-linux-android-",
+                "CROSS_COMPILE": "gcc-64/bin/aarch64-linux-gnu-",
                 "CROSS_COMPILE_ARM32": "gcc-32/bin/arm-linux-androideabi-",
-                "LD": "gcc-64/bin/aarch64-linux-android-ld",
-                "AR": "gcc-64/bin/aarch64-linux-android-ar",
-                "NM": "gcc-64/bin/aarch64-linux-android-nm",
-                "OBJCOPY": "gcc-64/bin/aarch64-linux-android-objcopy",
-                "OBJDUMP": "gcc-64/bin/aarch64-linux-android-objdump",
-                "READELF": "gcc-64/bin/aarch64-linux-android-readelf",
-                "OBJSIZE": "gcc-64/bin/aarch64-linux-android-size",
-                "STRIP": "gcc-64/bin/aarch64-linux-android-strip",
-                "LDGOLD": "gcc-64/bin/aarch64-linux-android-ld.gold",
-                "LLVM_AR": "gcc-64/bin/aarch64-linux-android-ar",
-                "LLVM_DIS": "gcc-64/bin/aarch64-linux-android-dis"
+                "LD": "gcc-64/bin/aarch64-linux-gnu-ld",
+                "AR": "gcc-64/bin/aarch64-linux-gnu-ar",
+                "NM": "gcc-64/bin/aarch64-linux-gnu-nm",
+                "OBJCOPY": "gcc-64/bin/aarch64-linux-gnu-objcopy",
+                "OBJDUMP": "gcc-64/bin/aarch64-linux-gnu-objdump",
+                "READELF": "gcc-64/bin/aarch64-linux-gnu-readelf",
+                "OBJSIZE": "gcc-64/bin/aarch64-linux-gnu-size",
+                "STRIP": "gcc-64/bin/aarch64-linux-gnu-strip",
+                "LDGOLD": "gcc-64/bin/aarch64-linux-gnu-ld.gold",
+                "LLVM_AR": "gcc-64/bin/aarch64-linux-gnu-ar",
+                "LLVM_DIS": "gcc-64/bin/aarch64-linux-gnu-dis"
             }
         },
         "AnyKernel3": {
