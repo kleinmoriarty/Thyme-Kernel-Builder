@@ -11,15 +11,13 @@
         "disableinet": true,
         "withLXCPatch": true,
         "withDockerLXC": true,
-        "toolchains": [
+        "toolchains": [ 
             {
-                "repo": "https://github.com/kdrag0n/proton-clang",
-                "branch": "master",
-                "name": "proton-clang",
-                "binPath": [
-                    "bin"
-                ]
-            }
+            "repo": "https://gitlab.com/ThankYouMario/android_prebuilts_clang-standalone/",
+            "branch": "18",
+            "name": "proton-clang",
+            "binPath": ["bin"]
+            },
         ],
         "ccache": true,
     "params": {
