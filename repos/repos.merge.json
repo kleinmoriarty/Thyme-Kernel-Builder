@@ -1,11 +1,11 @@
 [
     {
         "kernelSource": {
-            "name": "Huawei_Hi6250_AllInOne",
-            "repo": "https://github.com/Abdelhay-Ali/android_kernel_huawei_hi6250_KernelSU/",
-            "branch": "main",
-            "device": "merge",
-            "defconfig": "Abdelhay_defconfig"
+            "name": "Xiaomi-cepheus-all-in-one",
+            "repo": "https://github.com/crdroidandroid/android_kernel_xiaomi_cepheus/",
+            "branch": "12.0",
+            "device": "cepheus",
+            "defconfig": "cepheus_defconfig"
         },
         "withKernelSU": true,
         "disableinet": true,
