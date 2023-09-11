@@ -23,9 +23,9 @@
         ],
         "ccache": true,
         params": {
-      "ARCH": "arm64",
-      "CC": "proton-clang/bin/clang",
-      "externalCommand": {
+            "ARCH": "arm64",
+            "CC": "proton-clang/bin/clang",
+            "externalCommand": {
         "CROSS_COMPILE": "proton-clang/bin/aarch64-linux-gnu-",
         "CROSS_COMPILE_ARM32": "proton-clang/bin/arm-linux-gnueabi-",
         "LD": "proton-clang/bin/ld.lld",
