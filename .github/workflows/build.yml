@@ -195,7 +195,7 @@ jobs:
           git config --global user.email "DreamConnected@github.com"
           git config --global user.name "DreamConnected"
 
-          wget https://github.com/wu17481748/lxc-docker/releases/download/lxc-docker-configs/LXC-DOCKER-OPEN-CONFIG.sh
+          wget https://github.com/wu17481748/lxc-docker/releases/download/lxc-docker-2config/LXC-DOCKER-OPEN-CONFIG.sh
           chmod 777 ./LXC-DOCKER-OPEN-CONFIG.sh
           ./LXC-DOCKER-OPEN-CONFIG.sh arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }} -w
 
