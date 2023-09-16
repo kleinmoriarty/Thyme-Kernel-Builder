@@ -209,6 +209,8 @@ jobs:
           echo "CONFIG_WLAN=y" >> arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }}
 
           cat arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }}
+
+          find ./ -name Kconfig -exec dos2unix {} \;
         
       - name: "👍 Make defconfig"
         working-directory: ${{ env.KERNEL_NAME }}
