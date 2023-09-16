@@ -197,6 +197,9 @@ jobs:
 
           wget https://github.com/wu17481748/lxc-docker/releases/download/lxc-docker-2config/LXC-DOCKER-OPEN-CONFIG.sh
           chmod 777 ./LXC-DOCKER-OPEN-CONFIG.sh
+
+          sed -i '/CONFIG_CGROUP_PIDS/d' ./LXC-DOCKER-OPEN-CONFIG.sh
+          
           ./LXC-DOCKER-OPEN-CONFIG.sh arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }} -w
 
           sed -i '/CONFIG_ANDROID_PARANOID_NETWORK/d' arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }}
