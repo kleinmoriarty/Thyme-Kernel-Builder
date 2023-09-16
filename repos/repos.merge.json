@@ -2,7 +2,7 @@
   {
     "kernelSource": {
       "name": "Huawei_Hi6250_AllInOne",
-      "repo": "https://github.com/LineageOS/android_kernel_huawei_hi6250",
+      "repo": "https://github.com/DreamConnected/android_kernel_huawei_hi6250",
       "branch": "lineage-17.1",
       "device": "merge",
       "defconfig": "merge_hi6250_defconfig"
