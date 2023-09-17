@@ -5,7 +5,7 @@
       "repo": "https://github.com/DigiGoon/android_kernel_xiaomi_sm8350",
       "branch": "spark-13",
       "device": "haydn",
-      "defconfig": "gki_defconfig"
+      "defconfig": "lahaina-qgki_defconfig"
     },
     "withKernelSU": true,
     "toolchains": [
