@@ -3,7 +3,7 @@
     "kernelSource": {
       "name": "Xiaomi_SM8350_AllInOne",
       "repo": "https://github.com/LineageOS/android_kernel_xiaomi_sm8350",
-      "branch": "spark-13",
+      "branch": "lineage-20",
       "device": "haydn",
       "defconfig": "rockpi4_defconfig"
     },
