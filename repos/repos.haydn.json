@@ -3,7 +3,7 @@
     "kernelSource": {
       "name": "Xiaomi_SM8350_AllInOne",
       "repo": "https://github.com/3102802702/kernel_xiaomi_sm8350-miui",
-      "branch": "miui-t-backup",
+      "branch": "miui-t",
       "device": "haydn",
       "defconfig": "haydn_defconfig"
     },
