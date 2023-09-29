@@ -5,7 +5,7 @@
       "repo": "https://github.com/3102802702/android_kernel_xiaomi_sm8350.git",
       "branch": "okcar-1.0",
       "device": "haydn",
-      "defconfig": "haydn_defconfig"
+      "defconfig": "lahaina-qgki_defconfig"
     },
     "withKernelSU": true,
     "toolchains": [
