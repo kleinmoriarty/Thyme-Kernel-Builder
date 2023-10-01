@@ -207,21 +207,6 @@ jobs:
           echo -e "CONFIG_HAVE_KPROBES=y" >> arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }}
           echo -e "CONFIG_KPROBE_EVENTS=y" >> arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }}
 
-
-          wget https://github.com/wu17481748/lxc-docker/releases/download/lxc-docker-2config/LXC-DOCKER-OPEN-CONFIG.sh
-          chmod 777 ./LXC-DOCKER-OPEN-CONFIG.sh
-          ./LXC-DOCKER-OPEN-CONFIG.sh arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }} -w
-
-          sed -i '/CONFIG_ANDROID_PARANOID_NETWORK/d' arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }}
-          echo "# CONFIG_ANDROID_PARANOID_NETWORK is not set" >> arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }}
-
-          #cat arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }}
-
-          find ./ -name Kconfig -exec dos2unix {} \;
-
-          wget https://github.com/DreamConnected/lxc-checkconfig/releases/download/lxc/lxc-checkconfig
-          chmod 755 ./lxc-checkconfig
-          CONFIG=arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }} ./lxc-checkconfig
         
       - name: "👍 Make defconfig"
         working-directory: ${{ env.KERNEL_NAME }}
