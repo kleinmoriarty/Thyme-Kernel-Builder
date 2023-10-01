@@ -1,11 +1,11 @@
 [
   {
     "kernelSource": {
-      "name": "Xiaomi_SM8350_AllInOne",
-      "repo": "https://github.com/3102802702/android_kernel_xiaomi_sm8350.git",
-      "branch": "okcar-1.0",
+      "name": "haydn",
+      "repo": "https://github.com/3102802702/kernel_xiaomi_sm8350-miui.git",
+      "branch": "miui-t",
       "device": "haydn",
-      "defconfig": "lahaina-qgki_defconfig"
+      "defconfig": "haydn_defconfig"
     },
     "withKernelSU": true,
     "toolchains": [
