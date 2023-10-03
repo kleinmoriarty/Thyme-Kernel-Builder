@@ -8,6 +8,7 @@
       "defconfig": "haydn_defconfig"
     },
     "withKernelSU": true,
+    "ENABLE_LXC" :false,
     "toolchains": [
       {
         "repo": "https://github.com/kdrag0n/proton-clang",
