@@ -1,7 +1,7 @@
 [
   {
     "kernelSource": {
-      "name": "haydn",
+      "name": "1.0",
       "repo": "https://github.com/3102802702/kernel_xiaomi_sm8350-miui.git",
       "branch": "miui-t",
       "device": "haydn",
