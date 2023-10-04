@@ -206,8 +206,7 @@ jobs:
           echo -e "CONFIG_HAVE_KPROBES=y" >> arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }}
           echo -e "CONFIG_KPROBE_EVENTS=y" >> arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }}
       - name: "👍 LXC-DOCKER"
-        if: $
-{{ env.ENABLE_LXC == 'true' }}
+        if: ${{ env.ENABLE_LXC == 'true' }}
         run: |
           wget https://github.com/wu17481748/lxc-docker/releases/download/lxc-docker-2config/LXC-DOCKER-OPEN-CONFIG.sh
           chmod 777 ./LXC-DOCKER-OPEN-CONFIG.sh
