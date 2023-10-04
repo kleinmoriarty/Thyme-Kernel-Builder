@@ -49,9 +49,7 @@ jobs:
       DEFCONFIG_NAME: ${{ matrix.repos.kernelSource.defconfig }}
 
       withKernelSU: ${{ matrix.repos.withKernelSU }}
-      ENABLE_LXC : $
-{{ matrix.repos.ENABLE_LXC}}
-      ccache: ${{ matrix.repos.ccache }}
+      ENABLE_LXC: ${{ matrix.repos.ENABLE_LXC }}
       useAnykernel: ${{ matrix.repos.AnyKernel3.use }}
       release: ${{ matrix.repos.AnyKernel3.release }}
     steps:
