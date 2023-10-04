@@ -9,6 +9,7 @@
     },
     "withKernelSU": true,
     "ENABLE_LXC" :true,
+    "arch" :arm64,
     "toolchains": [
       {
         "repo": "https://github.com/kdrag0n/proton-clang",
