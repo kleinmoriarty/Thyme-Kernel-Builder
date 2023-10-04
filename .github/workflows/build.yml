@@ -41,7 +41,6 @@ jobs:
       WORKSPACE: ${{ github.workspace }}
 
       builddate: "${{ needs.Set-repos.outputs.builddate }}"
-
       KERNEL_NAME: ${{ matrix.repos.kernelSource.name }}
       KERNEL_REPO: ${{ matrix.repos.kernelSource.repo }}
       KERNEL_BRANCH: ${{ matrix.repos.kernelSource.branch }}
@@ -50,6 +49,8 @@ jobs:
       DEFCONFIG_NAME: ${{ matrix.repos.kernelSource.defconfig }}
 
       withKernelSU: ${{ matrix.repos.withKernelSU }}
+      ENABLE_LXC : $
+{{ matrix.repos.ENABLE_LXC}}
       ccache: ${{ matrix.repos.ccache }}
       useAnykernel: ${{ matrix.repos.AnyKernel3.use }}
       release: ${{ matrix.repos.AnyKernel3.release }}
