@@ -47,7 +47,7 @@ jobs:
       KERNEL_DEVICE: ${{ matrix.repos.kernelSource.device }}
 
       DEFCONFIG_NAME: ${{ matrix.repos.kernelSource.defconfig }}
-
+      arch: ${{ matrix.repos.arch }}
       withKernelSU: ${{ matrix.repos.withKernelSU }}
       ENABLE_LXC: ${{ matrix.repos.ENABLE_LXC }}
       useAnykernel: ${{ matrix.repos.AnyKernel3.use }}
