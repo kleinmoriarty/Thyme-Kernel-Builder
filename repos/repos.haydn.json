@@ -40,7 +40,7 @@
     "AnyKernel3": {
       "use": true,
       "release": true,
-      "repo": "https://github.com/easterNday/AnyKernel3/",
+      "repo": "https://github.com/3102802702/AnyKernel3.git",
       "branch": "thyme"
     }
   }
