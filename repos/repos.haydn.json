@@ -1,9 +1,9 @@
 [
   {
     "kernelSource": {
-      "name": "vk",
+      "name": "staging",
       "repo": "https://github.com/bggRGjQaUbCoE/android_kernel_xiaomi_sm8350-Voyager.git",
-      "branch": "miui-new",
+      "branch": "staging",
       "device": "haydn",
       "defconfig": "haydn_defconfig"
     },
