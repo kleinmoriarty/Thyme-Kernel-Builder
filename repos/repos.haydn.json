@@ -1,14 +1,14 @@
 [
   {
     "kernelSource": {
-      "name": "MGLRU",
+      "name": "MGLRU-LXD",
       "repo": "https://github.com/bggRGjQaUbCoE/android_kernel_xiaomi_sm8350-Voyager.git",
       "branch": "MGLRU",
       "device": "haydn",
       "defconfig": "haydn_defconfig"
     },
     "withKernelSU": true,
-    "ENABLE_LXC" :false,
+    "ENABLE_LXC" :true,
     "toolchains": [
       {
         "repo": "https://github.com/kdrag0n/proton-clang",
