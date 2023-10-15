@@ -1,9 +1,9 @@
 [
   {
     "kernelSource": {
-      "name": "staging",
+      "name": "MGLRU",
       "repo": "https://github.com/bggRGjQaUbCoE/android_kernel_xiaomi_sm8350-Voyager.git",
-      "branch": "staging",
+      "branch": "MGLRU",
       "device": "haydn",
       "defconfig": "haydn_defconfig"
     },
