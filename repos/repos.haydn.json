@@ -2,13 +2,13 @@
   {
     "kernelSource": {
       "name": "baseline",
-      "repo": "https://github.com/TheVoyager0777/android_kernel_xiaomi_sm8150.git",
+      "repo": "https://github.com/3102802702/android_kernel_xiaomi_sm8150.git",
       "branch": "baseline",
       "device": "raphael",
       "defconfig": "raphael_defconfig"
     },
     "withKernelSU": true,
-    "ENABLE_LXC" :true,
+    "ENABLE_LXC" :false,
     "toolchains": [
       {
         "repo": "https://github.com/kdrag0n/proton-clang",
