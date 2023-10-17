@@ -1,11 +1,11 @@
 [
   {
     "kernelSource": {
-      "name": "MGLRU-LXD",
-      "repo": "https://github.com/bggRGjQaUbCoE/android_kernel_xiaomi_sm8350-Voyager.git",
-      "branch": "MGLRU",
-      "device": "haydn",
-      "defconfig": "haydn_defconfig"
+      "name": "baseline",
+      "repo": "https://github.com/TheVoyager0777/android_kernel_xiaomi_sm8150.git",
+      "branch": "baseline",
+      "device": "raphael",
+      "defconfig": "raphael_defconfig"
     },
     "withKernelSU": true,
     "ENABLE_LXC" :true,
