@@ -2,10 +2,10 @@
   {
     "kernelSource": {
       "name": "baseline",
-      "repo": "https://github.com/3102802702/android_kernel_xiaomi_sm8150.git",
-      "branch": "baseline",
-      "device": "raphael",
-      "defconfig": "raphael_defconfig"
+      "repo": "https://github.com/bheatleyyy/kernel_oplus_sm8350.git",
+      "branch": "thirteen-old",
+      "device": "sm8650",
+      "defconfig": "vendor/lahaina-qgki_defconfig"
     },
     "withKernelSU": true,
     "ENABLE_LXC" :false,
