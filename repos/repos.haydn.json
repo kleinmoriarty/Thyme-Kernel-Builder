@@ -5,7 +5,7 @@
       "repo": "https://github.com/Kleinmoretia-h/android_kernel_oneplus_sm8350.git",
       "branch": "ksu_mt2110",
       "device": "MT2111",
-      "defconfig": "Klein"
+      "defconfig": "luckyzyx_defconfig"
     },
     "withKernelSU": true,
     "ENABLE_LXC" :false,
