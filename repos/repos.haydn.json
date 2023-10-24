@@ -2,7 +2,7 @@
   {
     "kernelSource": {
       "name": "baseline",
-      "repo": "https://github.com/Kleinmoretia-h/android_kernel_oneplus_sm8350.git",
+      "repo": "https://github.com/luckyzyx/android_kernel_modules_and_devicetree_oneplus_sm8350.git",
       "branch": "ksu_mt2110",
       "device": "MT2111",
       "defconfig": "luckyzyx_defconfig"
