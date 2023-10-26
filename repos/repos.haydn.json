@@ -3,7 +3,7 @@
     "kernelSource": {
       "name": "baseline",
       "repo": "https://github.com/kleinmoriarty/android_kernel_oneplus_sm8350.git",
-      "branch": "sm8350_ksu",
+      "branch": "oneplus/sm8350_t_13.1.0_oneplus9rt",
       "device": "MT2111",
       "defconfig": "klein_defconfig"
     },
