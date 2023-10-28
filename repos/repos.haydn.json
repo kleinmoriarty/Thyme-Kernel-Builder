@@ -3,9 +3,9 @@
     "kernelSource": {
       "name": "baseline",
       "repo": "https://github.com/kleinmoriarty/kernel_oneplus_sm8350.git",
-      "branch": "thirteen-base",
+      "branch": "oneplus/sm8350_t_13.1.0_oneplus9rt",
       "device": "SM8350",
-      "defconfig": "klein_defconfig"
+      "defconfig": "sm8350_defconfig"
     },
     "withKernelSU": true,
     "ENABLE_LXC" :false,
