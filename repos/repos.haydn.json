@@ -4,8 +4,8 @@
       "name": "baseline",
       "repo": "https://github.com/kleinmoriarty/android_kernel_oneplus_sm8350.git",
       "branch": "oneplus/ksu_mt2110",
-      "device": "SM8350",
-      "defconfig": "sm8350_defconfig"
+      "device": "ksu_mt2110",
+      "defconfig": "luckyzyx_defconfig"
     },
     "withKernelSU": true,
     "ENABLE_LXC" :false,
