@@ -5,7 +5,7 @@
       "repo": "https://github.com/kleinmoriarty/kernel_oneplus_9rt.git",
       "branch": "oneplus/sm8350_t_13.1.0_oneplus9rt",
       "device": "oneplus",
-      "defconfig": "vendor/lahaina_QGKI.config"
+      "defconfig": "red_defconfig"
     },
     "withKernelSU": true,
     "ENABLE_LXC" :false,
