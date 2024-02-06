@@ -2,10 +2,10 @@
   {
     "kernelSource": {
       "name": "baseline",
-      "repo": "https://github.com/kleinmoriarty/android_kernel_oneplus_sm8350.git",
-      "branch": "oneplus/sm8350_t_13.0.0_op9rt",
+      "repo": "https://github.com/OnePlusOSS/android_kernel_oneplus_sm8350",
+      "branch": "oneplus/sm8350_u_14.0.0_oneplus9rt",
       "device": "lahaina",
-      "defconfig": " ken_defconfig"
+      "defconfig": "defconfig"
     },
     "withKernelSU": true,
     "ENABLE_LXC" :false,
