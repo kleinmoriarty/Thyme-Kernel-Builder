@@ -5,7 +5,7 @@
       "repo": "https://github.com/OnePlusOSS/android_kernel_oneplus_sm8350",
       "branch": "oneplus/sm8350_u_14.0.0_oneplus9rt",
       "device": "lahaina",
-      "defconfig": "defconfig"
+      "defconfig": "qemu_defconfig"
     },
     "withKernelSU": true,
     "ENABLE_LXC" :false,
